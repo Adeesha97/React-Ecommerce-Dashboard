@@ -4,7 +4,7 @@ import "./Recommendation.css";
 import { useSelector } from "react-redux";
 
 export default function Recommendation({ type }) {
-  const name = useSelector((state) => state.user.name);
+  const name = useSelector((state) => state.user.userInfo.name);
 
   const title =
     type === "user"
